@@ -1,0 +1,264 @@
+body {
+  background-image: url("bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 1000px; */
+  height: 150vh;
+}
+
+.top{
+  position: relative;
+}
+
+.nav {
+  display: grid;
+  width: 380px;
+  height: 40px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  gap: 0;
+  position: absolute;
+  top: 63px;
+  right: 150px;
+  /* border: 3px solid black; */
+  padding-top: 10px;
+  padding-left: 5px;
+  color: white;
+}
+
+.m1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.m2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.m3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.logo {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+
+.img-logo {
+  height: 60px;
+  width: 60px;
+}
+
+.menu {
+  position: absolute;
+  top: 58px;
+  right: 120px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.row {
+  position: relative;
+  width: 100vw;
+}
+
+.sahara {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  width: 550px;
+  height: 500px;
+  /* border: 5px solid black; */
+}
+
+.p1 {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+}
+
+.p2 {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  line-height: 30px;
+  top: 200px;
+  left: 3px;
+}
+
+.explore {
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  padding-top: 8px;
+  background-color: white;
+  /* font-weight: bold; */
+  border-radius: 20px;
+  position: absolute;
+  left: 105px;
+  top: 570px;
+}
+
+.images {
+  height: 700px;
+  width: 750px;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 200px;
+  right: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-items: space-around; */
+  /* display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 50px; */
+}
+
+.img {
+  height: 200px;
+  width: 200px;
+  /* border: 2px solid red; */
+  /* justify-content: space-around; */
+  padding: 5%;
+  margin: 6%;
+  border-radius: 15px;
+  color: white;
+  line-height: 30px;
+}
+
+.img1 {
+  background-image: url("pic-1.png");
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url("pic-2.png");
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url("pic-3.png");
+  background-size: cover;
+}
+
+.img4 {
+  background-image: url("pic-4.png");
+  background-size: cover;
+}
+
+.img:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+@media (min-width:360px) and (max-width:856px) {
+  body {
+    background-image: url("bg-img.jpg");
+    background-repeat: repeat;
+    /* background-size: cover; */
+    /* height: 1000px; */
+  }
+
+  .nav {
+    display: grid;
+    width: 380px;
+    height: 40px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    gap: 0;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    /* border: 3px solid black; */
+    padding-top: 10px;
+    padding-left: 5px;
+    color: white;
+  }
+
+  .logo {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 15px;
+    right: 120px;
+  }
+
+  .sahara {
+    position: absolute;
+    left: 100px;
+    top: 87px;
+    width: 700px;
+    height: 280px;
+    border: 5px solid black;
+  }
+
+  .p1 {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    top: -25px;
+  }
+
+  .p2 {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    line-height: 30px;
+    top: 58px;
+    left: 3px;
+  }
+
+  .explore {
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    background-color: white;
+    /* font-weight: bold; */
+    border-radius: 20px;
+    position: absolute;
+    left: 105px;
+    top: 280px;
+  }
+
+  .images {
+    height: 700px;
+    width: 750px;
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 300px;
+    right: 80px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .img {
+    height: 230px;
+    width: 350px;
+    /* border: 2px solid red; */
+    justify-content: center;
+    padding: 5%;
+    margin: 6%;
+    border-radius: 15px;
+    color: white;
+    line-height: 30px;
+  }
+}
